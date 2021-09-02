@@ -10,11 +10,11 @@ import Contributon from './page/contribution';
 function App() {
   return (
     <Router>
-      <div className="container mt-3">
+      <div>
         <Switch>
           <Route exact path={['/', '/cart']} component={Cart} />
           <Route exact path="/create-book" component={CreateBook} />
-          <Route path="/contribution/:id" component={Contributon} />
+          <Route path="/contribution" component={Contributon} />
         </Switch>
       </div>
     </Router>
