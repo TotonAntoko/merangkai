@@ -1,0 +1,96 @@
+.header {
+  background: #fef7f2;
+  background-image: url("assets/bg-header-ornament.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.6rem;
+
+        &:first-child {
+          border-right: 1px solid #bfc8d4;
+          padding-right: 4rem;
+        }
+
+        &:last-child {
+          border-right: 1px solid #bfc8d4;
+          margin-left: 4rem;
+        }
+
+        li {
+          list-style: none;
+
+          a {
+            font-family: "Space Grotesk", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+
+            color: #687a92;
+            text-decoration: none;
+
+            &.create-book {
+              /* Auto Layout */
+
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              padding: 10px 16px 9px;
+
+              /* Orange/50 */
+
+              background: #fef7f2;
+              /* Orange/500 */
+
+              border: 1px solid #f6911f;
+              color: #f6911f;
+              box-sizing: border-box;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    margin-top: 7rem;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 4rem;
+      line-height: 150%;
+      text-align: center;
+      color: #220000;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: "Space Grotesk", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 150%;
+      text-align: center;
+      color: #687a92;
+    }
+  }
+}
