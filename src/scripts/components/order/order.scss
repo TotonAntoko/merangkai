@@ -1,0 +1,155 @@
+.order {
+  position: absolute;
+  width: 109.8rem;
+  height: 79.7rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 36.6rem;
+  background: #fff;
+
+  border: 1px solid #f1f3f5;
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+  padding: 4rem 3rem;
+
+  .breadcrumb {
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #687a92;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+
+    p {
+      &:first-child {
+        color: #2b0900;
+      }
+      &:after {
+        content: ">";
+        margin-left: 1rem;
+      }
+      &:last-child::after {
+        content: "";
+      }
+    }
+  }
+
+  .table-order {
+    .head,
+    .body .item-order {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      justify-items: flex-end;
+      align-items: center;
+    }
+
+    .head {
+      h1 {
+        &:first-child {
+          justify-self: flex-start !important;
+        }
+      }
+      padding-bottom: 2.4rem;
+      border-bottom: 1px solid #f1f3f5;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+
+      .item-order {
+        padding: 2rem 0;
+        border-bottom: 1px solid #f1f3f5;
+
+        .info-order {
+          display: flex;
+          gap: 32px;
+          justify-self: flex-start;
+          align-items: center;
+
+          img {
+            // max-width: 32px;
+            // max-height: 32px;
+          }
+
+          .text {
+            h1 {
+              font-family: "Space Grotesk", sans-serif;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 1.8rem;
+              line-height: 150%;
+              color: #220000;
+            }
+
+            p {
+              font-family: "Space Grotesk", sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 1.6rem;
+              line-height: 150%;
+              color: #687a92;
+            }
+          }
+        }
+
+        .price {
+          font-family: "Space Grotesk", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: #220000;
+        }
+
+        .quantity {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+
+          font-family: "Space Grotesk", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.6rem;
+          line-height: 150%;
+          text-align: center;
+          color: #220000;
+
+          button {
+            font-size: 1.6rem;
+            width: 22px;
+            height: 22px;
+          }
+        }
+
+        .total-price {
+          font-family: "Space Grotesk", sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.6rem;
+          line-height: 150%;
+          text-align: right;
+          color: #220000;
+        }
+      }
+    }
+
+    .footer {
+      margin: 3.2rem;
+      text-align: right;
+
+      button {
+        padding: 1.6rem 5rem;
+        background: #f6911f;
+        border-radius: 8px;
+        border: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
