@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.scss';
 
 const Header = () => (
@@ -11,10 +12,14 @@ const Header = () => (
       <nav>
         <ul>
           <li>
-            <a className="other-product" href="#other-product">Other Product</a>
+            <Link to="/contribution">
+              Other Product
+            </Link>
           </li>
           <li>
-            <a href="#my-cart">My Cart (0)</a>
+            <Link to="/cart">
+              My Cart (0)
+            </Link>
           </li>
         </ul>
         <ul>
@@ -22,7 +27,10 @@ const Header = () => (
             <a href="#login">Login</a>
           </li>
           <li>
-            <a className="create-book" href="#create-book">Create Book</a>
+            <Link className="create-book" to="/create-book">
+              Create Book
+            </Link>
+            {/* <a className="create-book" href="/">Create Book</a> */}
           </li>
         </ul>
       </nav>
