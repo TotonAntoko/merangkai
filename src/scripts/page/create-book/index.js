@@ -1,8 +1,12 @@
 import React from 'react';
 import './create-book.scss';
 
+import Header from '../../components/header';
+
 const CreateBook = () => (
-  <h1>CreateBook</h1>
+  <>
+    <Header />
+  </>
 );
 
 export default CreateBook;

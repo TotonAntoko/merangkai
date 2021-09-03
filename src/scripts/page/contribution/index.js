@@ -1,8 +1,12 @@
 import React from 'react';
 import './contribution.scss';
 
+import Header from '../../components/header';
+
 const Contribution = () => (
-  <h1>Contribution</h1>
+  <>
+    <Header />
+  </>
 );
 
 export default Contribution;
